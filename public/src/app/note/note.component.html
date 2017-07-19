@@ -1,0 +1,8 @@
+<h1>Welcome to Annonymous Notes!</h1>
+
+<div *ngIf="errors">
+	<p *ngFor="let e of errors" class="error">{{e}}</p>
+	<!-- {{errors}} -->
+</div>
+<app-note-create (newNoteEvent)="createNote($event)"></app-note-create>
+<app-note-list [childNotes]='notes'></app-note-list>

@@ -1,0 +1,4 @@
+<form (submit)="createNote(); noteForm.reset()" #noteForm = "ngForm">
+	<input type="text" name="note" [(ngModel)]="newNote.note" >
+	<input type="submit" value="Add Note">
+</form>
