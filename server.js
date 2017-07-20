@@ -18,4 +18,4 @@ app.all("*", (req,res,next) => {
     res.sendfile(path.resolve("./public/dist/index.html"))
 });
 
-app.listen(80, ()=> {console.log('Listening on 6788')})
+app.listen(8080, ()=> {console.log('Listening on 8080')})
